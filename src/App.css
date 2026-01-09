@@ -1,0 +1,215 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.app-container {
+  display: flex;
+  align-items: flex-start;
+  background-color: #2D2327;
+  padding: 30px;
+  border-radius: 50px;
+}
+
+
+.weather-info-card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(40, 40, 60, 0.25);
+  backdrop-filter: blur(16px) saturate(180%);
+  padding: 30px;
+  width: 600px;
+  border-radius: 30px;
+  flex: 1;
+
+}
+
+
+.weather-info-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 70px;
+}
+
+.input-card {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  align-self: center;
+}
+
+h3 {
+  font-size: 4rem;
+  letter-spacing: 4px;
+  margin: 10px 0;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+
+h1 {
+  color: #FFFFFF;
+  text-shadow: 0 0 .5em #000000aa;
+}
+
+img {
+  height: auto;
+  width: 120px;
+  align-self: start;
+  filter: brightness(1.5);
+}
+
+p {
+  font-size: 20px;
+  margin: 5px;
+  color: #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 200px;
+}
+
+input {
+  padding: 10px;
+  width: 300px;
+  align-self: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 2px black solid;
+
+}
+
+#temp {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+/*Theme Colors*/
+
+.app-container.cold {
+  background: linear-gradient(to bottom, #61a2d1, #87c4cc);
+}
+
+
+.app-container.cool {
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+}
+
+
+.app-container.warm {
+  background: linear-gradient(135deg, #f7951ece, #ffd0006b);
+}
+
+
+.app-container.hot {
+  background: linear-gradient(135deg, #ff6d50c4, #9c4242);
+}
+
+
+
+.showcase {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.showcase button {
+  width: 200px;
+  font-size: 0.95em;
+  background-color: #2d5468;
+
+}
+
+h4 {
+  margin-top: 40px;
+  margin-bottom: 0;
+  color: white;
+}
+
+
+
+#getWeatherButton {
+  background-color: #e0e0e0;
+  border-radius: 50px;
+  box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px 10px #ffffff;
+  color: #4d4d4d;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 15px 40px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid rgb(206, 206, 206);
+}
+
+
+#getWeatherButton:hover {
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+}
+
+#getWeatherButton:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+}
+
+
+
+
+
+
+
+
+/*Querys-------------------------------------------------------*/
+
+@media (max-width: 1000px) {
+
+  .app-container {
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 30px;
+    margin: 10px;
+  }
+
+  .weather-info-card {
+    display: flex;
+    flex-direction: column;
+  background: rgba(40, 40, 60, 0.25);
+  backdrop-filter: blur(16px) saturate(180%);
+    padding: 30px;
+    max-width: 250px;
+    border-radius: 30px;
+    flex: 1;
+
+  }
+
+
+
+  .weather-info-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 70px;
+  }
+
+  .input-card {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+  }
+
+  input {
+    width: 100%;
+    width: 250px;
+    height: 20px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+}
